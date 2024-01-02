@@ -1,8 +1,8 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Twitter from '../assets/twitter.svg'
-import LinkedIn from '../assets/LinkedIn.svg'
-import Instagram from '../assets/Instagram.svg'
+import LinkedIn from '../assets/linkedIn.svg'
+import Instagram from '../assets/instagram.svg'
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xbjnrnpn");
