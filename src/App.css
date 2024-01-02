@@ -1,0 +1,162 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+*{
+  scroll-behavior: smooth;
+}
+
+
+
+.mx-w-30{
+  /* border:1px solid black; */
+  max-width:3.5rem;
+}
+
+.logo img{
+  width:100%;
+}
+
+.menu-bar{
+  max-width:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.gray-text{
+  color:#9B66FD;
+  
+}
+
+.contact-btn{
+  outline:2px solid black;
+}
+
+
+.light-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.service-flex-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+/* .answer{
+  height:0;
+  overflow:hidden;
+} */
+
+/* carousal styling */
+.carousel {
+  position: relative;
+  border-radius: 10px;
+  height: 320px;
+  max-width: 480px;
+  margin: auto;
+  overflow: hidden;
+  /* border:1px solid black; */
+  
+  
+
+}
+.carousel img {
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  border: #ff00008e solid 2px;
+  margin:0 auto;
+}
+.slide_direction {
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.right {
+  background-color: #fb666675;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  /* padding: 10px 8px 8px 13px; */
+  /* margin: 0 20px; */
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  margin: auto 10px;
+  height: 25px;
+  width: 25px;
+}
+.left {
+  left: 0;
+  top:30%;
+}
+.right {
+  top:30%;
+  right: 0;
+}
+.left > svg, .right > svg{
+  color: #C6A7F6;
+  
+}
+.indicator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* border:1px solid black; */
+}
+.dot {
+  background-color: #ECE2FD;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.active {
+  background-color: #9B66FD;
+}
+
+/* mobile nav animation */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  min-height: 100vh;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index:50;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* .navbar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  filter: blur(20px); 
+  z-index: 5;
+  border:1px solid black;
+
+  
+} */
