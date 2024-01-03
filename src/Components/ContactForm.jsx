@@ -133,22 +133,42 @@ function ContactForm() {
       </form>
       </div>
       <div className="container">
-      <h1 className="text-2xl font-medium mt-24 mb-0">Join Us</h1>
+      <motion.h1 className="text-2xl font-medium mt-24 mb-0"
+       initial={{ opacity: 0 }}
+       whileInView={{ opacity: 1}}
+       transition={{duration:2}}
+      >Join Us</motion.h1>
+      <p className="text-center text-xs font-thin">we are the budding IT solution team,
+                      don’t forget to follow us. </p>
       <div className="max-w-96 mx-auto">
-        <div className="link-item text-center flex justify-center mt-8">
+        <motion.div className="link-item text-center flex justify-center mt-8" 
+         initial={{ opacity: 0,scale:0.5 }}
+         whileInView={{ opacity: 1,scale:1}}
+         transition={{duration:1}}
+        >
         <a href="#" target="_blank">
           <img src={Twitter} alt="twitter link image" className="min-w-36" />
         </a>
-        </div>
-        <div className="link-item flex justify-center mt-8">
+        </motion.div>
+        <motion.div className="link-item flex justify-center mt-8"
+        initial={{ opacity: 0,scale:0.5 }}
+        whileInView={{ opacity: 1,scale:1}}
+        transition={{duration:1}}
+        >
         <a href="#" target="_blank">
           <img src={LinkedIn} alt="twitter link image" className="min-w-36" />
         </a>
-        </div><div className="link-item flex justify-center mt-8 mb-24">
+        </motion.div>
+        
+        <motion.div className="link-item flex justify-center mt-8 mb-24"
+        initial={{ opacity: 0,scale:0.5 }}
+        whileInView={{ opacity: 1,scale:1}}
+        transition={{duration:1}}
+        >
         <a href="#" target="_blank">
           <img src={Instagram} alt="twitter link image" className="min-w-36" />
         </a>
-        </div>
+        </motion.div>
         
 
       </div>
