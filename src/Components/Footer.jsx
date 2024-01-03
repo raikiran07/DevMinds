@@ -2,6 +2,7 @@ import React from 'react'
 
 import {useState} from 'react'
 import Accordian from '../Components/Accordian'
+import { motion,useInView,useAnimation } from "framer-motion"
 
 const Footer = () => {
     const [isOpen,setIsOpen] = useState(false)
@@ -41,9 +42,13 @@ const Footer = () => {
                 
 
             </div>
-            <div className="about-section text-sm text-very-light-purple">
+            <motion.div className="about-section text-sm text-very-light-purple"
+             initial={{ opacity: 0,scale:0.3 }}
+             whileInView={{ opacity: 1,scale:1}}
+             transition={{duration:1}}
+            >
             <span className="min-w-32">&#169;</span> all rights reserved by DevMinds
-            </div>
+            </motion.div>
         </div>
     </div>
   )

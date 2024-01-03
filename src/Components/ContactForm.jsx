@@ -138,8 +138,8 @@ function ContactForm() {
        whileInView={{ opacity: 1}}
        transition={{duration:2}}
       >Join Us</motion.h1>
-      <p className="text-center text-xs font-thin">we are the budding IT solution team,
-                      don’t forget to follow us. </p>
+      {/* <p className="text-center text-xs font-thin">we are the budding IT solution team,
+                      don’t forget to follow us. </p> */}
       <div className="max-w-96 mx-auto">
         <motion.div className="link-item text-center flex justify-center mt-8" 
          initial={{ opacity: 0,scale:0.5 }}
