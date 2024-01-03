@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -69,8 +69,8 @@
 
 }
 .carousel img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   border: #ff00008e solid 2px;
   margin:0 auto;
@@ -97,19 +97,19 @@
   width: 25px;
 }
 .left {
-  left: 0;
-  top:30%;
+  left: 5%;
+  top:50%;
 }
 .right {
-  top:30%;
-  right: 0;
+  top:50%;
+  right: 5%;
 }
 .left > svg, .right > svg{
   color: #C6A7F6;
   
 }
 .indicator {
-  margin-top: 20px;
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -163,3 +163,12 @@
 
   
 } */
+
+@media screen and (min-width:1024px){
+  .carousel{
+    height:480px;
+  }
+  .carousel img{
+    height: 100%;
+  }
+}

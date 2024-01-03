@@ -58,12 +58,12 @@ function ContactForm() {
 
  
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container flex flex-col  lg:flex-row lg:px-16 lg:max-w-5xl mx-auto" id="contact">
       <div className="container">
-      <h1 className="text-2xl font-medium mt-24 mb-0">Contact</h1>
-       <p className="text-xs text-purple font-thin">reach out to our teams for any business purpose</p>
+      <h1 className="text-2xl font-medium mt-24 mb-0 lg:mt-16 lg:text-4xl lg:font-bold">Contact</h1>
+       <p className="text-xs text-light-gray font-light">reach out to our teams for any business purpose</p>
 
-         <form onSubmit={handleSubmit} className="max-w-96 mx-auto px-5 mt-8">
+         <form onSubmit={handleSubmit} className="mx-auto px-5 mt-8 min-w-full lg:pb-8">
           <div className="text-left">
                 <label htmlFor="email" className="text-left text-light-gray text-sm">
               Email Address
@@ -79,7 +79,7 @@ function ContactForm() {
             />
            
           </div>
-          <div className="text-left">
+          <div className="text-left mt-3">
                 <label htmlFor="domain" className="text-left text-light-gray text-sm">
               Select Domain
             </label> <br/>
@@ -132,41 +132,41 @@ function ContactForm() {
       
       </form>
       </div>
-      <div className="container">
-      <motion.h1 className="text-2xl font-medium mt-24 mb-0"
+      <div className="container  lg:pb-8">
+      <motion.h1 className="text-2xl font-medium mt-24 mb-0 lg:mt-16 lg:text-4xl lg:font-bold"
        initial={{ opacity: 0 }}
        whileInView={{ opacity: 1}}
        transition={{duration:2}}
       >Join Us</motion.h1>
-      {/* <p className="text-center text-xs font-thin">we are the budding IT solution team,
-                      don’t forget to follow us. </p> */}
+      <p className="text-center text-xs font-light text-light-gray">we are the budding IT solution team,
+                      don’t forget to follow us. </p>
       <div className="max-w-96 mx-auto">
-        <motion.div className="link-item text-center flex justify-center mt-8" 
+        <motion.div className="link-item text-center flex justify-center mt-8 lg:mt-10" 
          initial={{ opacity: 0,scale:0.5 }}
          whileInView={{ opacity: 1,scale:1}}
          transition={{duration:1}}
         >
         <a href="#" target="_blank">
-          <img src={Twitter} alt="twitter link image" className="min-w-36" />
+          <img src={Twitter} alt="twitter link image" className="max-w-36 " />
         </a>
         </motion.div>
-        <motion.div className="link-item flex justify-center mt-8"
+        <motion.div className="link-item flex justify-center mt-8 lg:mt-10"
         initial={{ opacity: 0,scale:0.5 }}
         whileInView={{ opacity: 1,scale:1}}
         transition={{duration:1}}
         >
         <a href="#" target="_blank">
-          <img src={LinkedIn} alt="twitter link image" className="min-w-36" />
+          <img src={LinkedIn} alt="twitter link image" className="max-w-36" />
         </a>
         </motion.div>
         
-        <motion.div className="link-item flex justify-center mt-8 mb-24"
+        <motion.div className="link-item flex justify-center mt-8 mb-24 lg:mt-10"
         initial={{ opacity: 0,scale:0.5 }}
         whileInView={{ opacity: 1,scale:1}}
         transition={{duration:1}}
         >
         <a href="#" target="_blank">
-          <img src={Instagram} alt="twitter link image" className="min-w-36" />
+          <img src={Instagram} alt="twitter link image" className="max-w-36" />
         </a>
         </motion.div>
         

@@ -13,7 +13,7 @@ const Accordian = ({question,answer}) => {
         </div>
     </div>
     {
-        isActive &&  <div className="answer p-2 font-light">{answer}</div>
+        isActive &&  <div className="answer p-2 font-light border-y-2 border-purple">{answer}</div>
     }
    
     </div>

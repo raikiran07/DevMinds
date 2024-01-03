@@ -14,12 +14,28 @@ const [isOpen,setIsOpen] = useState(false)
 
   return (
     <div className="header min-h-screen relative" id="home">
-        <nav className="max-w-96 mx-auto flex justify-between content-cneter pt-3 lg:max-w-full">
+        <nav className="max-w-96 mx-auto flex justify-between content-cneter pt-3 lg:max-w-full lg:px-16">
         <div className="logo mx-w-30">
             <img src={Logo} alt="company logo" />
         </div>
-        <div className="menu-bar mx-w-30">
-            <img src={Menu} alt="menu button" onClick={()=>setIsOpen(!isOpen)} />
+        <div className="menu-bar mx-w-30 lg:hidden">
+            <img src={Menu} alt="menu button" onClick={()=>setIsOpen(!isOpen)} className="cursor-pointer" />
+        </div>
+        <div className="desktop-link hidden lg:block">
+          <ul className="flex items-center justify-around gap-5">
+          <li className="text-md font-medium text-purple hover:text-very-light-purple">
+            <a href="#home">Home</a>
+          </li>
+          <li className="text-md font-medium text-purple hover:text-very-light-purple">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="text-md font-medium text-purple hover:text-very-light-purple">
+            <a href="#services">Services</a>
+          </li>
+          <li className="text-md font-medium text-purple hover:text-very-light-purple">
+            <a href="#contact">Contact</a>
+          </li>
+          </ul>
         </div>
 
     </nav>
@@ -29,7 +45,7 @@ const [isOpen,setIsOpen] = useState(false)
          whileInView={{ opacity: 1}}
          transition={{duration:3}}
         >WELCOME   TO DEVMINDS</motion.h1>
-        <p className="gray-text text-xs font-thin">we craft your ideas into reality 🚀</p>
+        <p className="gray-text text-xs font-thin lg:text-sm lg:font-normal">we craft your ideas into reality 🚀</p>
         <motion.div 
         className="hero-image-container text-center lg:max-w-xl mx-auto"
         initial={{ opacity: 0,y:155 }}
@@ -61,7 +77,7 @@ const [isOpen,setIsOpen] = useState(false)
       <div className={`mobile-sidebar  bg-light-purple ${isOpen ? "open" : ""}`}>
         <div>
           <div className="abolute bottom-0 flex items-center justify-end ">
-            <img src={Close} alt="close svg" className="w-8 close-btn" onClick={()=>setIsOpen(!isOpen)} />
+            <img src={Close} alt="close svg" className="w-8 close-btn cursor-pointer" onClick={()=>setIsOpen(!isOpen)} />
           </div>
         <ul>
           <li className="text-xl font-medium mt-5 mb-2" onClick={()=>setIsOpen(!isOpen)}>

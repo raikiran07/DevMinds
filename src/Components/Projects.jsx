@@ -20,15 +20,20 @@ const Projects = ({images}) => {
       setCurrentIndex(index);
     };
     return (
-      <>
-        <h1 className="text-2xl font-medium mt-16" id="projects">Current Projects</h1>
-        <div className="carousel">
+      <div className="project-container relative">
+        <h1 className="text-2xl font-medium mt-16 mb-5" id="projects">Current Projects</h1>
+        <div className="carousel lg:max-w-screen-lg lg:max-h-96 border relative">
         
             <img
               key={currentIndex}
               src={images[currentIndex]}
             /><div className="slide_direction">
-            <div className="left" onClick={handlePrevious}>
+            
+            
+          </div>
+         
+        </div>
+        <div className="left" onClick={handlePrevious}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="20"
@@ -48,8 +53,7 @@ const Projects = ({images}) => {
                 <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
               </svg>
             </div>
-          </div>
-          <div className="indicator">
+        <div className="indicator">
             {images.map((_, index) => (
               <div
                 key={index}
@@ -59,7 +63,6 @@ const Projects = ({images}) => {
             ))}
           </div>
         </div>
-        </>
       );
 }
 

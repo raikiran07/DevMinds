@@ -28,8 +28,8 @@ const Footer = () => {
       ]
   return (
     <div className="min-w-full  bg-light-purple py-4">
-        <div className="container max-w-96 mx-auto">
-            <h1 className="text-left text-2xl font-medium pt-16">FAQ's</h1>
+        <div className="container max-w-96 mx-auto lg:max-w-5xl">
+            <h1 className="text-left text-2xl font-medium pt-16 mb-3">FAQ's</h1>
             <div className="faq pb-16">
                 {
                     faqs.map(item=>{
@@ -42,13 +42,9 @@ const Footer = () => {
                 
 
             </div>
-            <motion.div className="about-section text-sm text-very-light-purple"
-             initial={{ opacity: 0,scale:0.3 }}
-             whileInView={{ opacity: 1,scale:1}}
-             transition={{duration:1}}
-            >
+            <div className="about-section text-sm text-very-light-purple">
             <span className="min-w-32">&#169;</span> all rights reserved by DevMinds
-            </motion.div>
+            </div>
         </div>
     </div>
   )
