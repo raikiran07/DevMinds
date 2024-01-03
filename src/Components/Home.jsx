@@ -25,7 +25,7 @@ const [isOpen,setIsOpen] = useState(false)
     </nav>
     <div className="hero-container max-w-96 mt-24 mx-auto lg:max-w-full">
         <h1 className="font-monst text-4xl font-bold tracking-wider text-center lg:text-5xl">WELCOME   TO DEVMINDS</h1>
-        <p className="gray-text text-sm">we craft your ideas into reality 🚀</p>
+        <p className="gray-text text-xs font-thin">we craft your ideas into reality 🚀</p>
         <motion.div 
         className="hero-image-container text-center lg:max-w-xl mx-auto"
         initial={{ opacity: 0,y:155 }}
@@ -39,8 +39,14 @@ const [isOpen,setIsOpen] = useState(false)
        whileInView={{ opacity: 1}}
        transition={{duration:0.8}}
        >
-       <button className="btn join-btb  mr-3 px-4 py-2 rounded-full bg-purple text-white">JOIN US</button>
-        <button className="btn contact-btn outline-purple ml-3 px-4 py-2 rounded-full text-purple">CONTACT</button>
+        <a href="#contact">
+        <button className="btn join-btb  mr-3 px-4 py-2 rounded-full bg-purple text-white">JOIN US</button>
+        </a>
+       
+       <a href="#contact">
+       <button className="btn contact-btn outline-purple ml-3 px-4 py-2 rounded-full text-purple">CONTACT</button>
+       </a>
+       
        </motion.div>
        
        

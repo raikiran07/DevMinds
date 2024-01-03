@@ -45,6 +45,9 @@
   align-items:center;
   justify-content:center;
 }
+.service-container{
+  box-shadow:1px 3px  10px #ECE2FD;
+}
 
 
 /* .answer{
