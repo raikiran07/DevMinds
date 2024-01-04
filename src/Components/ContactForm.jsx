@@ -165,8 +165,8 @@ function ContactForm() {
         whileInView={{ opacity: 1,scale:1,rotate:0}}
         transition={{duration:1}}
         >
-        <a href="#" target="_blank">
-          <img src={Instagram} alt="twitter link image" className="max-w-36" />
+        <a href="https://www.instagram.com/devmindstech/" target="_blank">
+          <img src={Instagram} alt="instagram link image" className="max-w-36" />
         </a>
         </motion.div>
         

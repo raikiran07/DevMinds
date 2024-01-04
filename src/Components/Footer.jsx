@@ -54,7 +54,7 @@ const Footer = () => {
       <div className="flex-container flex justify-around text-left pt-16 max-w-4xl mx-auto">
       <div>
               <h1 className="font-normal text-base lg:text-xl lg:font-medium">About</h1>
-              <p className="font-thin text-xs max-w-32 text-white lg:text-base lg:font-base lg:max-w-48">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, labore?</p>
+              <p className="font-thin text-xs max-w-32 text-white lg:text-base lg:font-base lg:max-w-48">we are a cost-effective IT solutions service provider, dedicated to delivering professional websites and applications that empower businesses to thrive in the digital landscape.</p>
             </div>
             <div>
               <h1 className="font-normal text-base lg:text-xl lg:font-medium">Links</h1>
@@ -63,7 +63,7 @@ const Footer = () => {
                   <a href="#">Twitter</a>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <a href="https://www.instagram.com/devmindstech/" target="_blank">Instagram</a>
                 </li>
                 <li>
                   <a href="#">Twitter</a>

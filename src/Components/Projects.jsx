@@ -22,7 +22,7 @@ const Projects = ({images}) => {
     return (
       <div className="project-container relative">
         <h1 className="text-2xl font-medium mt-16 mb-5 lg:mt-24" id="projects">Current Projects</h1>
-        <div className="carousel lg:max-w-screen-lg lg:max-h-96 border relative">
+        <div className="carousel lg:max-w-screen-lg lg:max-h-96 relative lg:rounded-lg">
         
             <img
               key={currentIndex}
