@@ -27,10 +27,13 @@ const Footer = () => {
         }
       ]
   return (
-    <div className="min-w-full  bg-light-purple py-4">
-        <div className="container max-w-96 mx-auto lg:max-w-5xl">
-            <h1 className="text-left text-2xl font-medium pt-16 mb-3">FAQ's</h1>
-            <div className="faq pb-16">
+    <>
+    <div className="min-w-full  py-4 faq-container">
+        <div className="container max-w-96 mx-auto lg:max-w-2xl">
+          <div className="container">
+            
+          <h1 className="text-left text-2xl font-medium pt-16 mb-3">FAQ's</h1>
+          <div className="faq pb-16">
                 {
                     faqs.map(item=>{
                         return(<Accordian
@@ -42,11 +45,45 @@ const Footer = () => {
                 
 
             </div>
-            <div className="about-section text-sm text-very-light-purple">
-            <span className="min-w-32">&#169;</span> all rights reserved by DevMinds
-            </div>
+          </div>
+           
+            
         </div>
     </div>
+    <div className="container min-w-full bg-light-purple">
+      <div className="flex-container flex justify-around text-left pt-16 max-w-4xl mx-auto">
+      <div>
+              <h1 className="font-normal text-base lg:text-xl lg:font-medium">About</h1>
+              <p className="font-thin text-xs max-w-32 text-white lg:text-base lg:font-base lg:max-w-48">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, labore?</p>
+            </div>
+            <div>
+              <h1 className="font-normal text-base lg:text-xl lg:font-medium">Links</h1>
+              <ul className="font-thin text-xs text-white lg:text-base lg:font-base">
+                <li>
+                  <a href="#">Twitter</a>
+                </li>
+                <li>
+                  <a href="#">Twitter</a>
+                </li>
+                <li>
+                  <a href="#">Twitter</a>
+                </li>
+                <li>
+                  <a href="#">Twitter</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h1 className="font-normal text-base lg:text-xl lg:font-medium">Address</h1>
+              <p className="font-thin text-xs text-white lg:text-base lg:font-base">We operate remotely</p>
+            </div>
+      </div>
+            
+           </div>
+           <div className="about-section text-sm text-very-light-purple bg-light-purple p-5 pb-16 pt-16">
+            <span className="min-w-32">&#169;</span> all rights reserved by DevMinds
+            </div>
+    </>
   )
 }
 

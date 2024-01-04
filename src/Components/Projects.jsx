@@ -20,8 +20,8 @@ const Projects = ({images}) => {
       setCurrentIndex(index);
     };
     return (
-      <div className="project-container relative">
-        <h1 className="text-2xl font-medium mt-16 mb-5" id="projects">Current Projects</h1>
+      <div className="project-container relative border">
+        <h1 className="text-2xl font-medium mt-16 mb-5 lg:mt-24" id="projects">Current Projects</h1>
         <div className="carousel lg:max-w-screen-lg lg:max-h-96 border relative">
         
             <img
@@ -53,7 +53,7 @@ const Projects = ({images}) => {
                 <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
               </svg>
             </div>
-        <div className="indicator">
+        <div className="indicator lg:mb-24">
             {images.map((_, index) => (
               <div
                 key={index}
