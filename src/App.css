@@ -167,6 +167,71 @@
   
 } */
 
+.transparent-background {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (last parameter) as needed */
+}
+
+
+/* LoadingPage.css */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f; /* Dark background color */
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading-text {
+  font-size: 1.2em;
+  color: #ffffff; /* White text color */
+  margin-top: 10px;
+}
+
+.loading-dots {
+  display: flex;
+  align-items: center;
+}
+
+.loading-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4CAF50; /* Green color for the dots */
+  margin: 0 5px;
+  animation: moveUpDown 1s infinite ease-in-out;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes moveUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
 @media screen and (min-width:1024px){
   .carousel{
     height:480px;

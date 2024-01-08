@@ -8,6 +8,7 @@ import Contact from './Components/ContactForm'
 import Demo from './Components/Demo'
 import Footer from './Components/Footer'
 import Project from './Components/Projects'
+import Loading from './Components/LoadingPage'
 
 
 
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div>
+      <Loading />
      
       <Home/>
       <Services/>

@@ -58,12 +58,12 @@ function ContactForm() {
 
  
   return (
-    <div className="contact-container flex flex-col justify-center items-center  lg:flex-row lg:px-16 lg:max-w-5xl mx-auto" id="contact">
-      <div className="container">
-      <h1 className="text-2xl font-medium mt-24 mb-0 lg:mt-0 lg:text-4xl lg:font-bold">Contact</h1>
+    <div className="contact-container bg-[#F3F8FF] min-w-full flex flex-col justify-center items-center  lg:flex-row  lg:max-w-5xl mx-auto   px-16 mt-16  lg:px-32 " id="contact">
+      <div className="container lg:w-[60%] ">
+      <h1 className="text-2xl font-medium  mb-0 lg:mt-0 lg:text-4xl lg:font-bold pt-16">Contact</h1>
        <p className="text-xs text-light-gray font-light">reach out to our teams for any business purpose</p>
 
-         <form onSubmit={handleSubmit} className="mx-auto px-5 mt-8 min-w-full lg:pb-8">
+         <form onSubmit={handleSubmit} className="w-full px-5 mt-8 lg:w-[80%] lg:pb-16 lg:ml-16 ">
           <div className="text-left">
                 <label htmlFor="email" className="text-left text-light-gray text-sm">
               Email Address
@@ -72,7 +72,7 @@ function ContactForm() {
               id="email"
               type="email" 
               name="email"
-              className="min-w-full rounded-lg p-2 bg-very-light-purple focus:outline-purple"
+              className="min-w-full rounded-lg p-3 border border-5 border-purple  focus:outline-purple"
               value={formData.email}
               onChange={handleChange}
               required
@@ -86,7 +86,7 @@ function ContactForm() {
             <select
               id="domain"
               name="domain"
-              className="min-w-full rounded-lg p-2 bg-very-light-purple focus:outline-purple text-purple text-sm"
+              className="min-w-full rounded-lg p-2 border border-5 border-purple focus:outline-purple text-purple text-sm"
               value={formData.domain}
               onChange={handleChange}
               required
@@ -107,7 +107,7 @@ function ContactForm() {
             <textarea
               id="message"
               name="message"
-              className="min-w-full min-h-32 rounded-lg p-2 bg-very-light-purple focus:outline-purple"
+              className="min-w-full min-h-32 rounded-lg p-2 border border-5 border-purple focus:outline-purple"
               value={formData.message}
               onChange={handleChange}
               required
@@ -115,15 +115,17 @@ function ContactForm() {
          
       </div>
       
-      
+      <div className="text-left">
       <button type="submit" 
-      className="min-w-full mt-3 py-2 rounded-lg text-white bg-purple"
+      className="w-full mt-3 py-2 rounded-lg text-white bg-purple lg:w-[20%] border"
       >
         Submit
       </button>
+      </div>
+     
       {
         submitted && <motion.h3 
-        className="text-purple max-w-96 text-center bg-very-light-purple p-3 mt-2 rounded-lg"
+        className="text-purple max-w-96 text-center  bg-very-light-purple p-3 mt-2 rounded-lg"
         initial={{ opacity: 0,scaleX:0 }}
         whileInView={{ opacity: 1,scaleX:1 }}
         transition={{duration:0.5}}
@@ -132,15 +134,15 @@ function ContactForm() {
       
       </form>
       </div>
-      <div className="container  lg:pb-8">
-      <motion.h1 className="text-2xl font-medium mt-24 mb-0 lg:mt-20 lg:text-4xl lg:font-bold"
+      <div className="container  lg:pb-8  mt-16 lg:mt-0 lg:rounded-md  lg:w-[40%] ">
+      <motion.h1 className="text-2xl font-medium pt-16 mb-0 lg:mt-[-7rem] lg:text-4xl lg:font-bold lg:pt-0"
        initial={{ opacity: 0 }}
        whileInView={{ opacity: 1}}
        transition={{duration:2}}
       >Join Us</motion.h1>
-      <p className="text-center text-xs font-light text-light-gray">we are the budding IT solution team,
+      <p className="text-center text-xs font-light text-purple">we are the budding IT solution team,
                       don’t forget to follow us. </p>
-      <div className="max-w-96 mx-auto">
+      <div className="max-w-96 mx-auto mt-4 flex justify-around lg:items-start">
         <motion.div className="link-item text-center flex justify-center mt-8 lg:mt-10" 
          initial={{ opacity: 0,scale:0.2,rotate:20 }}
          whileInView={{ opacity: 1,scale:1,rotate:0}}

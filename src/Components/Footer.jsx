@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="container max-w-96 mx-auto lg:max-w-2xl">
           <div className="container">
             
-          <h1 className="text-left text-2xl font-medium pt-16 mb-3">FAQ's</h1>
+          <h1 className="text-left text-2xl font-medium mt-16 mb-3">FAQ's</h1>
           <div className="faq pb-16">
                 {
                     faqs.map(item=>{
