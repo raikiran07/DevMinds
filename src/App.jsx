@@ -9,6 +9,7 @@ import Demo from './Components/Demo'
 import Footer from './Components/Footer'
 import Project from './Components/Projects'
 import Loading from './Components/LoadingPage'
+import Showcase from './Components/Showcase'
 
 
 
@@ -29,12 +30,14 @@ function App() {
 
   return (
     <div>
+      <h1>Hello testing...</h1>
       <Loading />
      
       <Home/>
       <Services/>
-      <Project images={images}
-      />
+      {/* <Project images={images}
+      /> */}
+      <Showcase />
       <Contact />
       <Footer />
 

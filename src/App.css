@@ -205,7 +205,7 @@
   border-radius: 50%;
   background-color: #4CAF50; /* Green color for the dots */
   margin: 0 5px;
-  animation: moveUpDown 1s infinite ease-in-out;
+  animation: moveUpDown 1.5s infinite ease-in-out;
 }
 
 .loading-dot:nth-child(2) {
@@ -221,10 +221,10 @@
   50% { transform: translateY(-10px); }
 }
 
-.hidden {
+/* .hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 
 

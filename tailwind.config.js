@@ -18,7 +18,9 @@ export default {
       'dark-white':'#F5F5F5',
       'white':'#FFFFFF',
       'black':'#000000',
-      'light-white':'#ECE2FD'
+      'light-white':'#ECE2FD',
+      'purple-700':'rgb(126 34 206)',
+      'purple-400':'rgb(192 132 252)'
     }
   },
   plugins: [],

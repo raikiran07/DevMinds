@@ -75,23 +75,23 @@ const [isOpen,setIsOpen] = useState(false)
     </div>
 
     {
-      <div className={`mobile-sidebar  bg-purple ${isOpen ? "open" : ""}`}>
+      <div className={`mobile-sidebar  bg-purple-700 ${isOpen ? "open" : ""}`}>
         <div>
           <div className="abolute bottom-0 flex items-center justify-end ">
             <img src={Close} alt="close svg" className="w-8 close-btn cursor-pointer" onClick={()=>setIsOpen(!isOpen)} />
           </div>
         <ul className="text-very-light-purple">
-          <li className="text-xl font-medium mt-5 mb-2" onClick={()=>setIsOpen(!isOpen)}>
+          <li className="text-xl font-medium mt-5 mb-2 hover:text-purple-400" onClick={()=>setIsOpen(!isOpen)}>
             <a href="#home">Home</a>
           </li>
           
-          <li className="text-xl font-medium my-2" onClick={()=>setIsOpen(!isOpen)}>
+          <li className="text-xl font-medium my-2 hover:text-purple-400" onClick={()=>setIsOpen(!isOpen)}>
             <a href="#services">Services</a>
           </li>
-          <li className="text-xl font-medium my-2" onClick={()=>setIsOpen(!isOpen)}>
+          <li className="text-xl font-medium my-2 hover:text-purple-400" onClick={()=>setIsOpen(!isOpen)}>
             <a href="#projects">Projects</a>
           </li>
-          <li className="text-xl font-medium my-2" onClick={()=>setIsOpen(!isOpen)}>
+          <li className="text-xl font-medium my-2 hover:text-purple-400" onClick={()=>setIsOpen(!isOpen)}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
