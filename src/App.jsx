@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello testing...</h1>
+     
       <Loading />
      
       <Home/>
