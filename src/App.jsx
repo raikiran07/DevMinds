@@ -10,6 +10,7 @@ import Footer from './Components/Footer'
 import Project from './Components/Projects'
 import Loading from './Components/LoadingPage'
 import Showcase from './Components/Showcase'
+import Testimonials from './Components/Testimonials'
 
 
 
@@ -29,7 +30,7 @@ function App() {
   
 
   return (
-    <div>
+    <div className="w-full">
      
       <Loading />
      
@@ -38,6 +39,7 @@ function App() {
       {/* <Project images={images}
       /> */}
       <Showcase />
+      <Testimonials/>
       <Contact />
       <Footer />
 

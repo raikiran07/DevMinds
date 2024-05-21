@@ -27,7 +27,7 @@
 }
 
 .gray-text{
-  color:#9B66FD;
+  color:#ad83fa;
   
 }
 
@@ -45,9 +45,9 @@
   align-items:center;
   justify-content:center;
 }
-.service-container{
+/* .service-container{
   box-shadow:1px 3px  10px #ECE2FD;
-}
+} */
 .faq-container{
   box-shadow:5px 1px  10px #ECE2FD;
 }

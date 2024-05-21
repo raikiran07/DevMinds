@@ -39,8 +39,8 @@ const Showcase = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold mb-8 p-[4rem]">Our Work</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4">
+      <h1 className="text-3xl font-bold mb-8 p-[4rem] border">Our Work</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4 lg:max-w-[70%] mx-auto">
         {works.map((work) => (
           <WorkItem key={work.id} {...work} />
         ))}

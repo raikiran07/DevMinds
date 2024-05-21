@@ -20,7 +20,7 @@ const Services = () => {
              whileInView={{ opacity: 1,y:0}}
              transition={{duration:1}}
              >
-                <div className="service-flex-container bg-dark-white text-center min-w-32 p-2 rounded-lg light-shadow lg:w-3/5 lg:h-48"
+                <div className="service-flex-container bg-dark-white text-center min-w-32 p-2 rounded-lg light-shadow lg:w-3/5 lg:h-48 "
                 >
                     <div className=""
                     

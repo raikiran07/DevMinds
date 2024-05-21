@@ -41,7 +41,7 @@ const [isOpen,setIsOpen] = useState(false)
 
     </nav>
     <div className="hero-container max-w-96 mt-24 mx-auto lg:max-w-full">
-        <motion.h1 className="font-monst text-4xl font-bold tracking-wider text-center lg:text-5xl"
+        <motion.h1 className="font-monst text-4xl font-bold tracking-wider text-center lg:text-5xl text-[#9B66FD]"
          initial={{ opacity: 0 }}
          whileInView={{ opacity: 1}}
          transition={{duration:3}}
