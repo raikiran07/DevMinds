@@ -13,7 +13,7 @@ const [isOpen,setIsOpen] = useState(false)
 
 
   return (
-    <div className="header min-h-screen relative" id="home">
+    <div className="header min-h-screen relative bg-[#F3F8FF]" id="home">
         <nav className="max-w-96 mx-auto flex justify-between content-cneter pt-3 lg:max-w-full lg:px-16">
         <div className="logo mx-w-30">
             <img src={Logo} alt="company logo" />
@@ -75,7 +75,7 @@ const [isOpen,setIsOpen] = useState(false)
     </div>
 
     {
-      <div className={`mobile-sidebar  bg-purple-700 ${isOpen ? "open" : ""}`}>
+      <div className={`mobile-sidebar bg-gray-dark  ${isOpen ? "open" : ""}`}>
         <div>
           <div className="abolute bottom-0 flex items-center justify-end ">
             <img src={Close} alt="close svg" className="w-8 close-btn cursor-pointer" onClick={()=>setIsOpen(!isOpen)} />

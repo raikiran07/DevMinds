@@ -58,10 +58,10 @@ function ContactForm() {
 
  
   return (
-    <div className="contact-container bg-[#F3F8FF] min-w-full flex flex-col justify-center items-center  lg:flex-row  lg:max-w-5xl mx-auto   px-16 mt-16  lg:px-32 " id="contact">
+    <div className="contact-container bg-[#F3F8FF] min-w-full flex flex-col justify-center items-center  lg:flex-row  lg:max-w-5xl mx-auto   px-16 py-8  lg:px-32 " id="contact">
       <div className="container lg:w-[60%] ">
       <h1 className="text-2xl font-medium  mb-0 lg:mt-0 lg:text-4xl lg:font-bold pt-16">Contact</h1>
-       <p className="text-xs text-light-gray font-light">reach out to our teams for any business purpose</p>
+       <p className="text-xs text-light-purple font-light">reach out to our teams for any business purpose</p>
 
          <form onSubmit={handleSubmit} className="w-full px-5 mt-8 lg:w-[80%] lg:pb-16 lg:ml-16 ">
           <div className="text-left">

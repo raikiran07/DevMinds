@@ -6,31 +6,31 @@ const Showcase = () => {
   const works = [
     {
       id: 1,
-      image: 'url-to-your-image-1',
+      image: 'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Project 1',
-      description: 'Description of Project 1.',
+      description: 'Description of Project 1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, mollitia?',
     },
     {
       id: 2,
-      image: 'url-to-your-image-2',
+      image: 'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Project 2',
-      description: 'Description of Project 2.',
+      description: 'Lorem ipsum dolor sit amet..',
     },
     {
         id: 3,
-        image: 'url-to-your-image-2',
+        image: 'https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         title: 'Project 2',
         description: 'Description of Project 2.',
       },
       {
         id: 4,
-        image: 'url-to-your-image-2',
+        image: 'https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         title: 'Project 2',
         description: 'Description of Project 2.',
       },
       {
         id: 5,
-        image: 'url-to-your-image-2',
+        image: 'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',
         title: 'Project 2',
         description: 'Description of Project 2.',
       },
@@ -38,9 +38,10 @@ const Showcase = () => {
   ];
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl font-bold mb-8 p-[4rem] border">Our Work</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4 lg:max-w-[70%] mx-auto">
+    <div className="container mx-auto m-8">
+      <h1 className="text-3xl font-bold px-[4rem] py-3">Our Work</h1>
+      <hr className='max-w-[30px]  mx-auto mb-10'></hr>
+      <div className="max-w-[95%] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 mx-auto">
         {works.map((work) => (
           <WorkItem key={work.id} {...work} />
         ))}

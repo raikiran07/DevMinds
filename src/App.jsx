@@ -1,13 +1,10 @@
-import { useState,useRef,useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 import Home from './Components/Home'
 import Services from './Components/Services'
 import Contact from './Components/ContactForm'
-import Demo from './Components/Demo'
 import Footer from './Components/Footer'
-import Project from './Components/Projects'
 import Loading from './Components/LoadingPage'
 import Showcase from './Components/Showcase'
 import Testimonials from './Components/Testimonials'
@@ -36,8 +33,6 @@ function App() {
      
       <Home/>
       <Services/>
-      {/* <Project images={images}
-      /> */}
       <Showcase />
       <Testimonials/>
       <Contact />

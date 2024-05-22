@@ -45,13 +45,14 @@ const Testimonials = () => {
     }
 ]
   return (
-    <div className='container mx-auto'>
-        <h1 className='text-3xl font-bold mb-0 px-[4rem] py-[2rem] mt-[2rem]'>Testimonials</h1>
+    <div className='mx-auto mt-24 py-8 bg-[#F3F8FF]'>
+        <h1 className='text-3xl font-bold px-[4rem] mb-4'>Testimonials</h1>
+        <hr className='max-w-[30px]  mx-auto mb-8'></hr>
         <div className="testimonial-container w-full flex items-center  mx-auto gap-2  flex-wrap justify-center lg:max-w-[70%] lg:gap-4">
             {
                 list.map(person=>{
                     return(
-                        <div className='testimony flex  justify-center border   p-2 gap-2 max-w-[180px] min-h-[30px] rounded-md lg:min-h-[50px]'>
+                        <div className='testimony flex  justify-center border   p-2 gap-2 max-w-[180px] min-h-[30px] rounded-md lg:min-h-[120px] border-light-gray'>
                             <div className="profile-container ">
                                 <img src={person.img} alt="profile image" className='max-w-[30px] h-[30px] rounded-full' />
                             </div>
