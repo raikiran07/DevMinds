@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="w-full">
      
-      <Loading />
+      {/* <Loading /> */}
      
       <Home/>
       <Services/>
